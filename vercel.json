@@ -1,5 +1,10 @@
 {
   "version": 2,
-  "builds": [{ "src": "api/backup.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "/api/backup", "dest": "/api/backup.js" }]
+  "builds": [
+    { "src": "api/backup.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/backup", "dest": "/api/backup.js" },
+    { "src": "/api/download", "dest": "/api/backup.js" }
+  ]
 }
